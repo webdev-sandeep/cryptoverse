@@ -1,6 +1,6 @@
-import { Outlet, Link } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import { Layout, Typography, Space } from "antd";
+import { Layout } from "antd";
 
 const App = () => {
   return (
@@ -14,20 +14,6 @@ const App = () => {
             <Outlet />
           </div>
         </Layout>
-        <div className="footer" style={{ textAlign: "center" }}>
-          <Typography.Title
-            level={5}
-            style={{ color: "white", textAlign: "center" }}
-          >
-            Cryptoverse <br />
-            All Rights Reserved
-          </Typography.Title>
-          <Space>
-            <Link to={"/"}>Home</Link>
-            <Link to={"/exchanges"}>Exchanges</Link>
-            <Link to={"/news"}>News</Link>
-          </Space>
-        </div>
       </div>
     </div>
   );

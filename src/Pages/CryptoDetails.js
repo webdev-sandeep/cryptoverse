@@ -18,6 +18,7 @@ import {
   ThunderboltOutlined,
   CheckOutlined,
 } from "@ant-design/icons";
+import Loader from "../components/Loader";
 
 const { Title, Text } = Typography;
 const { Option } = Select;
@@ -107,7 +108,7 @@ const CryptoDetails = () => {
   ];
 
   if (isFetching) {
-    return <h1>Loading...</h1>;
+    return <Loader />;
   }
   return (
     <Col className="coin-detail-container">

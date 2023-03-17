@@ -3,6 +3,7 @@ import { Select, Typography, Card, Row, Col, Avatar } from "antd";
 import moment from "moment";
 import { useGetNewsQuery } from "../services/newsApi";
 import { useGetCryptosQuery } from "../services/cryptoApi";
+import Loader from "../components/Loader";
 
 const { Text, Title } = Typography;
 const { Option } = Select;
@@ -24,7 +25,7 @@ const News = ({ simplified }) => {
   }, [cryptoNews]);
 
   if (isFetching) {
-    return <h1>Loading...</h1>;
+    return <Loader />;
   }
   return (
     <Row gutter={[24, 24]}>
