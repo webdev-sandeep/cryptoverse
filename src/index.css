@@ -31,8 +31,8 @@ a:hover {
   flex: 1;
 }
 .routes {
-  padding: 20px;
-  padding-left: 40px;
+  padding: 1.5rem;
+  padding-left: 3rem;
 }
 .nav-container {
   position: fixed;
